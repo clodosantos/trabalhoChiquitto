@@ -1,0 +1,19 @@
+<h1>Lista de Pratos do Restaurante</h1>
+<table border="1">
+  <thead>
+    <tr>
+      <td>Descricao do Prato</td>
+      <td>Categoria</td>
+      <td>Valor</td>
+    </tr>
+  </thead>
+  <tbody>
+      <?php foreach ($this->pratos as $pratos){ 
+          if($pratos['valorprato'] > 0){?>
+        <tr>
+          <td><?php echo $pratos['descricaoprato'];?></td>
+          <td><?php echo $pratos['categoria'];?></td>
+          <td><?php echo $pratos['valorprato'];?></td>
+        </tr> <?php }}?>
+  </tbody>
+</table>
